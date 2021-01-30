@@ -1,0 +1,38 @@
+.homeContent{
+    display: flex;
+    margin: 0 auto;
+}
+.homeContainer{
+    width: 60%;
+    justify-content: flex-start;
+    background-color: #ccc;
+    overflow: auto;
+    height: 100vh;
+    position: relative;
+}
+
+.videoContainer{
+    width: 40%;
+    height: 100vh;
+    justify-content: flex-end;
+    background-color: #ddd;
+}
+
+.insideContent{
+padding: 7.5rem 7.5rem;
+}
+
+@media (max-width: 576px){
+.videoContainer{
+    display: none;
+}
+
+.homeContainer{
+    width: 100%;
+    justify-content: flex-start;
+    background-color: #ccc;
+    overflow: auto;
+    height: 100vh;
+}
+}
+
