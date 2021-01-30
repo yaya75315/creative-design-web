@@ -14,7 +14,6 @@ function App() {
         <div className="homeContainer" >
           <NavBar />
           <div className="insideContent">
-
           </div>
         </div>
         <div className="videoContainer" >
