@@ -1,38 +1,58 @@
-.homeContent{
+.homeContent {
     display: flex;
     margin: 0 auto;
 }
-.homeContainer{
+
+.homeContainer {
     width: 60%;
     justify-content: flex-start;
-    background-color: #ccc;
+    /* background-color: #ccc; 要做半透明白色*/
+    background-color: rgb(255, 255, 255, .7);
     overflow: auto;
     height: 100vh;
     position: relative;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /*隱藏scroll bar*/
 }
 
-.videoContainer{
+.homeContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.videoContainer {
     width: 40%;
     height: 100vh;
     justify-content: flex-end;
     background-color: #ddd;
 }
 
-.insideContent{
-padding: 7.5rem 7.5rem;
+.insideContent {
+    padding: 6.2rem 6rem 0 6rem;
 }
 
-@media (max-width: 576px){
-.videoContainer{
-    display: none;
+@media (max-width: 576px) {
+    .videoContainer {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+    }
+
+    .homeContainer {
+        width: 100%;
+        justify-content: flex-start;
+        overflow: auto;
+        height: 100vh;
+    }
+
+    .insideContent {
+        padding: 5rem 1.5rem 0 1.5rem;
+    }
 }
 
-.homeContainer{
-    width: 100%;
-    justify-content: flex-start;
-    background-color: #ccc;
-    overflow: auto;
-    height: 100vh;
+@media screen and (max-width: 1068px) {
+    .insideContent {
+        padding: 5rem 1.5rem 0 1.5rem;
+    }
 }
-}
-

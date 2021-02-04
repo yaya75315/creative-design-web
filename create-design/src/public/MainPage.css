@@ -1,0 +1,39 @@
+.mainPageTitle {
+    text-align: center;
+    line-height: 90vh;
+}
+
+.mainPageTitle h1 {
+    display: inline-block;
+    height: 95vh;
+    font-size: 3.325rem;
+}
+
+.mainPageArticle {
+    margin-bottom: 10rem;
+}
+
+.mainPageExhibition {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10rem;
+}
+
+.mainPageExhibition a {
+    display: inline-block;
+    width: 16rem;
+    margin-bottom: 3.125rem;
+    margin-right: 2rem;
+}
+
+
+.mainPageExhibition a img {
+    width: 100%;
+}
+
+@media screen and (max-width: 1152px) {
+    .mainPageExhibition a {
+        width: 100%;
+        margin-right: 0;
+    }
+}

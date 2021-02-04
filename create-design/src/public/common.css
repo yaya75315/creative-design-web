@@ -4,7 +4,29 @@
     list-style: none;
     text-decoration: none;
     font-family: 'Noto Sans TC', sans-serif;
+    color: var(--black);
 }
+
+:root {
+    --white: #fff;
+    --black: #000;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&display=swap');
+
+
+@media screen and (max-width: 576px) {
+    * {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1068px) {
+    * {
+        font-size: 14px;
+    }
+}
+
 
 input:focus,
 button:focus {
@@ -13,6 +35,18 @@ button:focus {
 
 div {
     display: block;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 6.25rem
+}
+
+p {
+    font-size: 1.875rem;
+    font-weight: 700;
+    line-height: 180%;
 }
 
 .none {
@@ -25,28 +59,26 @@ div {
     max-width: 1280px;
 }
 
-:root {
-    --navy-blue: #2066A6;
-    --light-blue: #EAF5FF;
-    --yellow: #FFE39D;
-    --gray: #979797;
-    --black: #4a4a4a;
-    --gray-border: rgb(151, 151, 151, .4);
-    --green: #17ae74;
-    --red: #df2d2d;
+.externalLinks {
+    display: inline-block;
+    font-size: 1.875rem;
+    margin-top: 2rem;
+    padding: 2rem;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+    text-decoration: underline;
+    box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&display=swap');
-
-
-@media screen and (max-width: 576px){
-    *{
-        font-size: 12px;
-    }
-}
-
-@media screen and (max-width: 1068px){
-    *{
-        font-size: 14px;
-    }
+.nextPage {
+    display: inline-block;
+    font-size: 1.875rem;
+    margin-top: 3rem;
+    width: 100%;
+    font-weight: 700;
+    text-align: center;
+    padding: 2rem;
+    border: 3px solid var(--black);
+    box-sizing: border-box;
 }
