@@ -1,13 +1,13 @@
-.nav{
-   width: 60%;
-   background-color: #eee;
-   margin: 0;
-   position: fixed;
-   justify-content: space-between;
-   display: flex;
+.nav {
+    width: 60%;
+    background-color: #eee;
+    margin: 0;
+    position: fixed;
+    justify-content: space-between;
+    display: flex;
 }
 
-ul li{
+.nav ul li {
     display: inline-block;
     padding: 2.25rem;
     font-weight: 700;
@@ -15,21 +15,21 @@ ul li{
     white-space: nowrap;
 }
 
-ul li:first-child{
+.nav ul a:first-child li {
     padding-left: 6rem;
 }
 
 .navLogo p {
     display: inline-block;
-    text-align:left;
+    text-align: left;
     font-weight: 700;
     font-size: 1rem;
     white-space: nowrap;
-   padding: 1.5rem;
+    padding: 1.5rem;
 }
 
-.burgerIcon{
-     display: none;
+.burgerIcon {
+    display: none;
     padding: 1.5rem;
 }
 
@@ -38,18 +38,18 @@ label{
     line-height: 2.5rem;
 }
 
-#burger:checked~.burgerIcon{
-  color: #fff;
+#burger:checked~.burgerIcon {
+    color: #fff;
 }
 
-#burger:checked +.navContent{
+#burger:checked+.navContent {
     display: block;
     width: 100%;
     position: absolute;
-    top:5.8rem;
+    top: 5.8rem;
 }
 
-#burger{
+#burger {
     display: none;
 }
 
@@ -58,32 +58,31 @@ label{
         width: 100%;
         background-color: transparent;
     }
-     ul li {
+
+    .nav ul li {
         color: #fff;
     }
 }
 
-@media screen and (max-width: 938px){
-    .navContent{
+@media screen and (max-width: 938px) {
+    .navContent {
         display: none;
     }
 
-    .burgerIcon{
+    .burgerIcon {
         display: inline-block;
     }
 
-    ul li:first-child{
-    padding-left: 2.25rem;
+    .nav ul li:first-child {
+        padding-left: 2.25rem;
     }
 }
 
-@media screen and (min-width: 938px){
+@media screen and (min-width: 938px) {
 
-#burger:checked +.navContent{
-    top:0rem;
+    #burger:checked+.navContent {
+        top: 0rem;
+    }
+
+
 }
-
-
-}
-
-

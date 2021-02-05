@@ -1,0 +1,11 @@
+.copyright {
+    height: 7.5rem;
+    background-color: var(--black);
+}
+
+.copyright p {
+    font-size: 1rem;
+    color: var(--white);
+    text-align: center;
+    line-height: 7.5rem;
+}

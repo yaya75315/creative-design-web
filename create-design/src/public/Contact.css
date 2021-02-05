@@ -1,0 +1,36 @@
+.contact {
+    margin-bottom: 12rem;
+}
+
+.contact h2 {
+    margin-bottom: 4.375rem;
+}
+
+.contactInformation {
+    display: flex;
+}
+
+
+.contactInformation ul:first-child {
+    margin-right: 6.25rem;
+}
+
+.contactInformation ul li:nth-child(odd) {
+    margin-bottom: 0.625rem;
+    font-weight: 700;
+}
+
+.contactInformation ul li:nth-child(even) {
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+@media (max-width: 576px) {
+    .contactInformation {
+        display: block;
+    }
+
+    .contactInformation ul li:nth-child(6) {
+        margin-bottom: 6rem;
+    }
+}
