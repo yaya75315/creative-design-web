@@ -1,0 +1,18 @@
+.sidePageContent{
+    padding-top: 5rem;
+}
+
+.mainPageArticle img{
+    padding: 3rem 0;
+    width: 100%;
+}
+
+.mainPageArticle a{
+text-align: left;
+padding-left: 0;
+}
+
+.courseMap{
+    padding: 1.5rem 0;
+}
+
