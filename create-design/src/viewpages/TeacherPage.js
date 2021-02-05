@@ -1,9 +1,15 @@
 import React from 'react'
+import TeacherCard from '../components/TeacherCard'
 
 const TeacherPage = () => {
     return (
-        <div>
-            <h1>TeacherPage</h1>
+        <div className="teacherPage">
+            <TeacherCard />
+            <TeacherCard />
+            <TeacherCard />
+            <TeacherCard />
+            <TeacherCard />
+            <TeacherCard />
         </div>
     )
 }

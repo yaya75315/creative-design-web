@@ -4,7 +4,7 @@ import '../public/Footer.css'
 const Footer = () => {
     return (
         <footer className="copyright">
-            <p>Copyright ©2019 國立臺北科技大學</p>
+            <p>Copyright ©2021 國立臺北科技大學</p>
         </footer>
     )
 }

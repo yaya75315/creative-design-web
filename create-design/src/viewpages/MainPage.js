@@ -1,7 +1,9 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import '../public/MainPage.css';
 import exhibition from '../public/images/exhibition.JPG';
-import {Link} from 'react-router-dom';
+import PastExhibitions from '../components/PastExhibitions'
+
 
 const MainPage = () => {
     return (
@@ -22,22 +24,12 @@ const MainPage = () => {
 
             <h2>歷屆展覽</h2>
             <div className="mainPageExhibition">
-                <a href="#">
-                    <img src={exhibition} alt=""/>
-                    <h3>109級上學年期末展覽</h3>
-                </a>
-                <a href="#">
-                    <img src={exhibition} alt=""/>
-                    <h3>109級上學年期末展覽</h3>
-                </a>
-                <a href="#">
-                    <img src={exhibition} alt=""/>
-                    <h3>109級上學年期末展覽</h3>
-                </a>
-                <a href="#">
-                    <img src={exhibition} alt=""/>
-                    <h3>109級上學年期末展覽</h3>
-                </a>
+                <PastExhibitions />
+                <PastExhibitions />
+                <PastExhibitions />
+                <PastExhibitions />
+                <PastExhibitions />
+                <PastExhibitions />
             </div>
             <div className="mainPageArticle">
                 <h2>創意設計學士班</h2>
