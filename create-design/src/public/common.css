@@ -12,7 +12,7 @@
     --black: #000;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900 &display=swap');
 
 
 @media screen and (max-width: 576px) {
@@ -64,11 +64,20 @@ p {
     font-size: 1.875rem;
     margin-top: 2rem;
     padding: 2rem;
-    font-weight: 700;
+    font-weight: 500;
     width: 100%;
     text-align: center;
     text-decoration: underline;
     box-sizing: border-box;
+}
+
+.externalLinks:hover {
+    color: rgb(0, 0, 0, .6);
+    font-weight: 500;
+}
+
+.externalLinks:active {
+    color: rgb(0, 0, 0, .4);
 }
 
 .nextPage {
@@ -78,7 +87,17 @@ p {
     width: 100%;
     font-weight: 700;
     text-align: center !important;
-    padding: 2rem;
-    border: 3px solid var(--black);
+    padding: 2rem !important;
+    /* border: 3px solid var(--black); */
     box-sizing: border-box;
+    background-color: rgb(0, 0, 0, .2);
+    transition: all .3s;
+}
+
+.nextPage:hover {
+    background-color: rgb(0, 0, 0, .1);
+}
+
+.nextPage:active {
+    background-color: rgb(0, 0, 0, .4);
 }

@@ -30,9 +30,9 @@ const KnowUsPage = () => {
                 <img src={exhibition} alt="" />
 
 
-                <a href="https://ixd.ntut.edu.tw/" className="externalLinks">互動設計系系網</a>
-                <a href="https://wwwid.ntut.edu.tw/" className="externalLinks">工業設計系系網</a>
-                <a href="https://arch1.ntut.edu.tw/" className="externalLinks">建築系系網</a>
+                <a href="https://ixd.ntut.edu.tw/"  target="_blank" className="externalLinks">互動設計系系網</a>
+                <a href="https://wwwid.ntut.edu.tw/"  target="_blank" className="externalLinks">工業設計系系網</a>
+                <a href="https://arch1.ntut.edu.tw/"  target="_blank" className="externalLinks">建築系系網</a>
 
 
                 <Link to="/CoursePage" className="nextPage">課程介紹</Link>

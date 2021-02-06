@@ -18,6 +18,7 @@
 
 .homeContainer::-webkit-scrollbar {
     display: none;
+    /*chrome 隱藏scroll bar*/
 }
 
 .videoContainer {
@@ -28,7 +29,7 @@
 }
 
 .insideContent {
-    padding:6.2rem 6rem 0 6rem;
+    padding: 6.2rem 6rem 0 6rem;
 }
 
 @media (max-width: 682px) {

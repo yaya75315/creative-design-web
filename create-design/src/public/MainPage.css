@@ -21,14 +21,29 @@
 
 .mainPageExhibition a {
     display: inline-block;
-    width: 16rem;
+    width: 18rem;
     margin-bottom: 3.125rem;
     margin-right: 2rem;
 }
 
-
-.mainPageExhibition a img {
+.exhibitionPhoto {
     width: 100%;
+    overflow: hidden;
+}
+
+.exhibitionPhoto img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    transition: .5s ease-in-out;
+}
+
+.mainPageExhibition a:hover img {
+    transform: scale(1.2);
+}
+
+.mainPageExhibition a h3 {
+    font-size: 1rem;
 }
 
 @media screen and (max-width: 1152px) {

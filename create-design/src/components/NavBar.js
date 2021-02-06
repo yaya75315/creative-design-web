@@ -9,9 +9,12 @@ const NavBar = () => {
             <input type="checkbox" id="burger" />
             <div className="navContent">
                 <ul className="menu">
-                    <Link to="/KnowUsPage"><li>認識創設</li></Link>
+                    {/* <Link to="/KnowUsPage"><li>認識創設</li></Link>
                     <Link to="/CoursePage"><li>課程介紹</li></Link>
-                    <Link to="/TeacherPage"><li>師資介紹</li></Link>
+                    <Link to="/TeacherPage"><li>師資介紹</li></Link> */}
+                    <li><Link to="/KnowUsPage">認識創設</Link></li>
+                    <li><Link to="/CoursePage">課程介紹</Link></li>
+                    <li><Link to="/TeacherPage">師資介紹</Link></li>
 
                     {/* <li>認識創設</li>
                     <li>課程介紹</li>
