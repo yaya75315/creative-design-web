@@ -4,7 +4,7 @@ import taiPhoto from '../public/images/tai.jpg';
 
 const TeacherCard = () => {
     return (
-        <div className="teacherCard">
+        <div className="teacherCard fadeIn">
             <img src={taiPhoto} alt=""className="teacherPhoto"/>
             <div className="teacherInformation">
                 <span className="teacherName">戴楠青</span>

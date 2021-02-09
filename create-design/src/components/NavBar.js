@@ -1,8 +1,17 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import '../public/NavBar.css'
 import { Link } from 'react-router-dom';
+import { gsap, Power3 } from 'gsap';
 
 const NavBar = () => {
+    useEffect(() => {
+        gsap.from(
+            '.nav',
+            2,
+            { y: 15, opacity: 0, ease: Power3.easeOut, delay: 0.8 },
+            'Start'
+        );
+    }, [])
     console.log("navBar");
     return (
         <div className="nav">

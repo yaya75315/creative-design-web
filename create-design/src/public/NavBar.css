@@ -5,6 +5,7 @@
     position: fixed;
     justify-content: space-between;
     display: flex;
+    z-index: 100;
 }
 
 .menu {
@@ -33,13 +34,25 @@
     background-color: #ccc;
 }
 
+.navLogo {
+    transition: background-color .3s ease-in-out;
+}
+
+.navLogo:hover {
+    background-color: #f2f2f2;
+}
+
+.navLogo:active {
+    background-color: #ccc;
+}
+
 .navLogo p {
     display: inline-block;
     text-align: left;
     font-weight: 700;
     font-size: 1rem;
     white-space: nowrap;
-    padding: 1.5rem;
+    padding: 1.2rem 1.2rem 1rem 1rem;
 }
 
 .burgerIcon {

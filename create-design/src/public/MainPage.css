@@ -21,7 +21,7 @@
 
 .mainPageExhibition a {
     display: inline-block;
-    width: 18rem;
+    width: 20rem;
     margin-bottom: 3.125rem;
     margin-right: 2rem;
 }
@@ -33,6 +33,7 @@
 
 .exhibitionPhoto img {
     display: block;
+    z-index: -1;
     width: 100%;
     object-fit: cover;
     transition: .5s ease-in-out;
@@ -43,7 +44,7 @@
 }
 
 .mainPageExhibition a h3 {
-    font-size: 1rem;
+    font-size: 1.6rem;
 }
 
 @media screen and (max-width: 1152px) {
