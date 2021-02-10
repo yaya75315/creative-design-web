@@ -4,7 +4,7 @@
 }
 
 .homeContainer {
-    width: 60%;
+    width: 65%;
     justify-content: flex-start;
     /* background-color: #ccc; 要做半透明白色*/
     background-color: rgb(255, 255, 255, .7);
@@ -22,14 +22,20 @@
 }
 
 .videoContainer {
-    width: 40%;
-    height: 100vh;
+    width: 35%;
+    height: 100vh !important;
     justify-content: flex-end;
-    background-color: #ddd;
+    background-color: #fff;
+    overflow: hidden;
 }
 
 .insideContent {
     padding: 6.2rem 6rem 0 6rem;
+}
+
+.videoContainer video{
+    height: 100%;
+    
 }
 
 @media (max-width: 682px) {
