@@ -53,6 +53,7 @@
     font-size: 1rem;
     white-space: nowrap;
     padding: 1.2rem 1.2rem 1rem 1rem;
+    margin-bottom: 0;
 }
 
 .burgerIcon {
