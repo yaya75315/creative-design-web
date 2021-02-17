@@ -70,7 +70,7 @@ function App() {
           <NavBar />
           <div className="insideContent">
             <Switch>
-              <Route path="/" component={MainPage} />
+              <Route path="/" exact component={MainPage} />
               <Route path="/CoursePage" component={CoursePage} />
               <Route path="/KnowUsPage" component={KnowUsPage} />
               <Route path="/TeacherPage" component={TeacherPage} />
