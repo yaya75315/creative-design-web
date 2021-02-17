@@ -1,13 +1,13 @@
 import React from 'react'
 import exhibition from '../public/images/exhibition.JPG'
 
-const PastExhibitions = () => {
+const PastExhibitions = ({ exhImg, exhInfo, exhLink }) => {
     return (
-        <a href="#" target="_blank" className="fadeIn">
+        <a href={exhLink} target="_blank" className="fadeIn">
             <div className="exhibitionPhoto">
-                <img src={exhibition} alt=""/>
+                <img src={exhImg} alt="" />
             </div>
-            <h3>109級上學年期末展覽</h3>
+            <h3>{exhInfo}</h3>
         </a>
     )
 }

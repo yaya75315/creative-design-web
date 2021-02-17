@@ -102,3 +102,7 @@ p {
 .nextPage:active {
     background-color: rgb(0, 0, 0, .4);
 }
+
+img{
+    -webkit-filter:grayscale(100%);
+}
