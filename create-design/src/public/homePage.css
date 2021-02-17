@@ -7,7 +7,7 @@
     width: 65%;
     justify-content: flex-start;
     /* background-color: #ccc; 要做半透明白色*/
-    background-color: rgb(255, 255, 255, .7);
+    background-color: rgb(255, 255, 255, .8);
     overflow: auto;
     height: 100vh;
     -ms-overflow-style: none;
@@ -33,9 +33,9 @@
     padding: 6.2rem 6rem 0 6rem;
 }
 
-.videoContainer video{
+.videoContainer video {
     height: 100%;
-    
+
 }
 
 @media (max-width: 682px) {
