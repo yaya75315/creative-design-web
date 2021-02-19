@@ -10,10 +10,10 @@
 
 .nav-options {
     padding-left: 4rem;
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  grid-gap: 50px;
-  list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 50px;
+    list-style-type: none;
 }
 
 .nav ul li {
@@ -75,46 +75,45 @@ label {
 @media screen and (max-width: 682px) {
     .nav {
         width: 100%;
-       background-color:rgba(255, 255, 255, 0.687)
+        background-color: rgba(255, 255, 255, 1)
     }
 
 }
 
 @media screen and (max-width: 938px) {
-    
-    
+
+
     .burgerIcon {
-    display: inline-block;
+        display: inline-block;
     }
 
     .nav-options {
-    display: flex;
-    width: 100%;
-    height: 260px;
-    position: absolute;
-    top: 89px;
-    left: -100%;
-    opacity: 0;
-    transition: all 0.5s ease;
-    flex-direction: column;
-    list-style-type: none;
-    grid-gap: 0px;
-    background-color:rgba(255, 255, 255, 0.687) ;
-  }
+        display: flex;
+        width: 100%;
+        height: 260px;
+        position: absolute;
+        top: 89px;
+        left: -100%;
+        opacity: 0;
+        transition: all 0.5s ease;
+        flex-direction: column;
+        list-style-type: none;
+        grid-gap: 0px;
+        background-color: rgba(255, 255, 255, 1);
+    }
 
-  .nav-options.active {
-    left: 0;
-    opacity: 1;
-    transition: all 0.5s ease;
-    z-index: 1;
-    align-content: center;
-    padding-left: 0px;
-  }
+    .nav-options.active {
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+        align-content: center;
+        padding-left: 0px;
+    }
 
-    .nav ul li{
+    .nav ul li {
         text-align: center;
     }
 
- 
-}
 
+}

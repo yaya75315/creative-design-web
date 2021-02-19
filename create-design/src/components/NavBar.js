@@ -19,7 +19,6 @@ const NavBar = () => {
             'Start'
         );
     }, [])
-    console.log("navBar");
     return (
         <div className="nav">
 

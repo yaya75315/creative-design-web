@@ -27,6 +27,18 @@
     }
 }
 
+body {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /*隱藏scroll bar*/
+}
+
+body::-webkit-scrollbar {
+    display: none;
+    /*chrome 隱藏scroll bar*/
+}
+
 
 input:focus,
 button:focus {
@@ -103,6 +115,6 @@ p {
     background-color: rgb(0, 0, 0, .4);
 }
 
-img{
-    -webkit-filter:grayscale(100%);
+img {
+    -webkit-filter: grayscale(100%);
 }

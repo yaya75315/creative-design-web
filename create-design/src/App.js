@@ -28,7 +28,6 @@ function App() {
 
 
   useEffect(() => {
-    console.log('homeContainer:', scroller.current);
     if (location.pathname !== originLocation) {
       scroller.current.scroll(0, 0)
     }//當路徑發生改變的時候讓homeContainer滾動捲軸到最上面
@@ -39,9 +38,15 @@ function App() {
       'Start'
     );//開啟網頁後跑過一次大標題
 
+    gsap.from(
+      '.videoContainer',
+      2,
+      { y: 15, opacity: 0, ease: Power3.easeOut, delay: 0.6 },
+      'Start'
+    );
+
     let fades = gsap.utils.toArray('.fadeIn');
     fades.forEach((fades) => {
-      console.log('foreach');
       gsap.from(fades, {
         duration: 1.6,
         y: '30',
@@ -70,18 +75,18 @@ function App() {
           <NavBar />
           <div className="insideContent">
             <Switch>
-              <Route path="/" component={MainPage} />
               <Route path="/CoursePage" component={CoursePage} />
               <Route path="/KnowUsPage" component={KnowUsPage} />
               <Route path="/TeacherPage" component={TeacherPage} />
+              <Route path="/" component={MainPage} />
             </Switch>
             <Contact />
           </div>
           <Footer />
         </div>
         <div className="videoContainer" >
-          <video autoPlay muted loop>
-            <source src={Video} type="video/mp4" />
+          <video loop autoPlay muted src={Video} playsinline="">
+            {/* <source src={Video} type="video/mp4" /> */}
           </video>
         </div>
       </div>
